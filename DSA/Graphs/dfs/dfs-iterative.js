@@ -13,7 +13,7 @@ const depthFirstSearch = (graph, source) => {
 
 
 const graph = {
-  a: ['b', 'c'],
+  a: ['c', 'b'],
   b: ['d'],
   c: ['e'],
   d: ['f'],
@@ -21,4 +21,4 @@ const graph = {
   f: []
 };
 
-depthFirstSearch(graph,'a');
+depthFirstSearch(graph,'a'); //abdfce
