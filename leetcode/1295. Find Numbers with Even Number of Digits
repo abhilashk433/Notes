@@ -1,0 +1,14 @@
+import java.lang.Math;
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count = 0;
+        for (int el: nums) {
+			// log10(number) + 1 returns the number of digits
+			// & bitwise operator used to find if the number is even or not
+            if ((((int) Math.log10(el) + 1) & 1) == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
